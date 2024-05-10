@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+#main{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/015/234/513/non_2x/felt-dark-green-soft-rough-textile-material-background-texture-close-up-poker-table-tennis-ball-table-cloth-empty-white-fabric-background-free-photo.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.flecha1{
+    animation: infinite 1s moverse2 linear;
+}
+
+
+
+.flecha2{
+    animation: infinite 1s moverse linear;
+    rotate: 180deg;
+}
+
+
+.dinero{
+    animation: infinite 0.5s dinero linear;
+}
+
+#arabe{
+    animation: 20s desaparecer forwards;
+}
+
+.muchotexto{
+    overflow: hidden;
+}
+
+@keyframes moverse{
+    0%{
+        transform: translateX(-100px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes moverse2{
+    0%{
+        transform: translateX(-100px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes dinero{
+    0%{
+        
+        color: red;
+    }
+    50%{
+    
+        color: black;
+    }
+    100%{
+        
+        color: red;
+    }
+}
+
+@keyframes desaparecer{
+    0%{
+        transform: scale(5);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
